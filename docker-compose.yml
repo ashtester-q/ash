@@ -1,0 +1,8 @@
+services:
+  ash:
+    build: .
+    image: ash:latest
+    volumes:
+      - ./output:/app/output
+      - ./data/cache:/app/data/cache
+    command: []
