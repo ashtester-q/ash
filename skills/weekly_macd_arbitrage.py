@@ -436,8 +436,8 @@ class WeeklyMACDArbitrageSkill:
             # 支撑位信息
             if s.tech_detail and s.tech_detail.support_resistance:
                 sr = s.tech_detail.support_resistance
-                lines.append(f"   支撑位: {sr.nearest_support:.2f} (距当前{s.support_distance_pct:+.1f}%)")
-                lines.append(f"   压力位: {sr.nearest_resistance:.2f} (距当前{s.resistance_distance_pct:+.1f}%)")
+                lines.append(f"   支撑位: {sr.nearest_support:.2f} (距当前{sr.support_distance_pct:+.1f}%)")
+                lines.append(f"   压力位: {sr.nearest_resistance:.2f} (距当前{sr.resistance_distance_pct:+.1f}%)")
                 if sr.support_quality == 'strong':
                     lines.append(f"   💎 强支撑(多重共振)")
                 if sr.confluence_supports:
